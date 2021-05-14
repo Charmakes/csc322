@@ -1,0 +1,96 @@
+1) You are off to shopping and need a program that allows you to enter the names of items, their price and quantities. Here is what a sample run should look like (with the keyboard input shown in italics) ...
+
+Enter item information ("exit" to exit)
+
+    item 1: chips
+
+    price: 3.5
+
+    quantity: 2
+
+    Enter item information ("exit" to exit)
+
+    item 2: red wine
+
+    price : 15.0
+
+    quantity : 1
+
+    Enter item information ("exit" to exit)
+
+    item 3 : steaks
+
+    price : 15.0
+
+    quantity : 2
+
+        
+
+    Your list:
+
+    steaks               2    $30
+
+    red wine             1    $15
+
+    chips                2    $7
+
+    -----------------------------
+
+    Total                     $52
+
+
+    An array of structures must be used, so that each new item can be recorded in an element of the array.
+    It's not known in advance how many new items will be added to the list, so the program must malloc for an initial array of size 1, and use the doubling realloc technique (as discussed in class) to get more memory as required. You must always check the return value from malloc, as done in the Malloc wrapper function (or just use Malloc :-).
+    After you are done building the shopping list you must sort the array of structures according to the total price of each item.
+    Before the program completes it must explicitly free the malloced memory.
+
+2.) Since we talked about pointers, memory allocation and linked lists in class, I'd like you to write a program that allows the user to:
+
+    Enter the names of persons.
+    For each person entered, enter the name of his/her best buddy.
+    Print out the "best buddys"
+
+Here what a sample run should look like (with the user input shown in italics) ...
+
+Enter nation name : Tom
+
+Enter nation name : Betty
+
+Enter nation name : Martin
+
+Enter nation name : Michael
+
+Enter nation name : Amanda
+
+Enter nation name : Catharine
+
+Enter nation name :
+
+Enter best ally name for Catharine : Amanda
+
+Enter best ally name for Amanda : Michael
+
+Enter best ally name for Michael : Martin
+
+Enter best ally name for Martin : Betty
+
+Enter best ally name for Betty : Amanda
+
+Enter best ally name for Tom : Catharine
+
+The best ally of Catharine is Amanda
+
+The best ally of Amanda is Michael
+
+The best ally of Michael is Martin
+
+The best ally of Martin is Betty
+
+The best ally of Betty is Amanda
+
+The best ally of Tom is Catharine
+
+
+    Each person's name entered must be stored in a node of a linked list.
+    Each node of the linked list must contain (only) the persons name, a pointer to the node for its best buddy, and a pointer to the next node in the list.
+    Before the program completes it must explicitly free the malloced memory.
