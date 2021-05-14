@@ -1,0 +1,1 @@
+head -13 thatfile.txt | tail -8 | grep "C[s,S][c,C][0-9][0-9][0-9][^M]"
