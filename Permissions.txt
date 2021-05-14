@@ -1,3 +1,0 @@
-mkdir IveGotRights
-chmod 764 IveGotRights
-umask 013                                                                      
