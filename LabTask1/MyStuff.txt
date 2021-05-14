@@ -1,0 +1,6 @@
+UID: 21806
+GID: 15
+Groups: kmem
+path of bash: /bin/bash 
+path of home dir: /home/ugrad/axc1436-322  
+PATH environment variable: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/ugrad/axc1436-322/bin 

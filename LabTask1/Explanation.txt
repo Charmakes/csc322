@@ -1,0 +1,7 @@
+wc `grep -l int *` performs a commmand within another command
+searches currect directory, prints if something is a subdirectory,  prints filename of file containing string "int" and prints specific count for each matching file, and tallies up a total
+
+grep -l int * | wc
+command uses the output of grep -l int * as input for wc command
+does not allow wc to look inside of the files properly
+unlike wc `grep -l int *`  it does not print the filenames of the matching files, only prints the subdirectories and performs word count from output text of grep -l int * filename matches , rather than counting inside the matching files themselves
